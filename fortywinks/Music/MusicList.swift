@@ -13,7 +13,7 @@ struct MusicList: View {
         "Deep Meditation",
         "In The Light",
         "Light Rain",
-        "Rain and thunder"
+        "Rain and thunder",
     ]
     @State private var buttonTag: Int = 0
     @State private var imageString: String = "Play"
