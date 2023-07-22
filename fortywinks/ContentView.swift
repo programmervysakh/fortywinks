@@ -8,17 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var screenSize : CGSize = .zero
-    
+    @State var screenSize: CGSize = .zero
+
     var body: some View {
-    
         ZStack {
             Color(.white)
                 .opacity(1)
                 .edgesIgnoringSafeArea(.all)
-            GeometryReader { geometry in
-                VStack(spacing:0) {
-                    HStack{
+            GeometryReader { _ in
+                VStack(spacing: 0) {
+                    HStack {
                         Text("Forty Winks")
                             .padding()
                             .fontWeight(.bold)
@@ -32,20 +31,19 @@ struct ContentView: View {
                             .frame(width: 40, height: 40)
                             .padding(10)
                     }
-                    .offset(y:0)
+                    .offset(y: 0)
                     .frame(minWidth: 0, maxHeight: 100)
-                    VStack{
+                    VStack {
                         MusicList()
                             .offset(y: 0)
-                            .frame(height:780,alignment: .center)
+                            .frame(height: 780, alignment: .center)
                             .listRowSeparator(.hidden)
                     }
-                    .padding(.bottom,0)
+                    .padding(.bottom, 0)
                 }
-                .padding(.top,10)
+                .padding(.top, 10)
                 .edgesIgnoringSafeArea(.bottom)
-                .offset(y:geometry.size.height*0 )
-                
+                .offset(y: 0)
             }
         }
     }

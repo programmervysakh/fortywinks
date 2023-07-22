@@ -20,6 +20,7 @@
 		409D5A452A6C54D700366CFE /* In The Light.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 409D5A442A6C54D700366CFE /* In The Light.mp3 */; };
 		409D5A482A6C55BE00366CFE /* Light Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 409D5A462A6C55BE00366CFE /* Light Rain.mp3 */; };
 		409D5A492A6C55BE00366CFE /* Rain and thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 409D5A472A6C55BE00366CFE /* Rain and thunder.mp3 */; };
+		409D5A4C2A6C625F00366CFE /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D5A4B2A6C625F00366CFE /* AudioPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		409D5A442A6C54D700366CFE /* In The Light.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "In The Light.mp3"; sourceTree = "<group>"; };
 		409D5A462A6C55BE00366CFE /* Light Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Light Rain.mp3"; sourceTree = "<group>"; };
 		409D5A472A6C55BE00366CFE /* Rain and thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rain and thunder.mp3"; sourceTree = "<group>"; };
+		409D5A4B2A6C625F00366CFE /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		409D5A1F2A6A53C800366CFE /* fortywinks */ = {
 			isa = PBXGroup;
 			children = (
+				409D5A4A2A6C624700366CFE /* AudioPlayer */,
 				409D5A3B2A6ACDBB00366CFE /* Info.plist */,
 				409D5A2E2A6A53E700366CFE /* Music */,
 				409D5A202A6A53C800366CFE /* fortywinksApp.swift */,
@@ -102,6 +105,14 @@
 				409D5A402A6B8F6200366CFE /* MusicData.swift */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		409D5A4A2A6C624700366CFE /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				409D5A4B2A6C625F00366CFE /* AudioPlayer.swift */,
+			);
+			path = AudioPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 				409D5A212A6A53C800366CFE /* fortywinksApp.swift in Sources */,
 				409D5A412A6B8F6200366CFE /* MusicData.swift in Sources */,
 				409D5A342A6A54D800366CFE /* PlayMusic.swift in Sources */,
+				409D5A4C2A6C625F00366CFE /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,31 +23,21 @@ struct MusicList: View {
         VStack(spacing: 0) {
             HStack {
                 List($sounds, id: \.self) { sounds in
-                    ZStack {
-                        HStack {
-                            Text(verbatim: sounds.wrappedValue)
-                                .fontWeight(.bold)
-                            Spacer()
-                            Spacer()
-                            Spacer()
-                            Spacer()
-                            Spacer()
-                            Spacer()
-                            Spacer()
-                            Spacer()
 
-                            Button(action: {
-                                soundName = sounds.wrappedValue
-                                playPressed()
+                    HStack {
+                        Text(verbatim: sounds.wrappedValue)
+                            .fontWeight(.bold)
+                        Spacer()
+                        Button(action: {
+                            soundName = sounds.wrappedValue
+                            playPressed()
 
-                            }) {
-                                Image(imageString)
-                                    .resizable()
-                                    .frame(width: 20, height: 20, alignment: .trailing)
-                            }
-                            .padding(20)
-                            .padding(.top, 10)
+                        }) {
+                            Image(imageString)
+                                .resizable()
+                                .frame(width: 20, height: 20, alignment: .trailing)
                         }
+                        .padding(20)
                     }
                 }
             }
