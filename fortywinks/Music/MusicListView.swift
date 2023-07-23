@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MusicList: View {
+struct MusicListView: View {
     @State public var sounds = [Musics(name: "Tranquility"), Musics(name: "Deep Meditation"), Musics(name: "In The Light"), Musics(name: "Light Rain"), Musics(name: "Rain and thunder"),
     ]
     @State var selectedIDs: UUID?
@@ -53,8 +53,8 @@ struct MusicList: View {
     }
 }
 
-struct MusicList_Previews: PreviewProvider {
+struct MusicListView_Previews: PreviewProvider {
     static var previews: some View {
-        MusicList()
+        MusicListView()
     }
 }

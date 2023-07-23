@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		409D5A212A6A53C800366CFE /* fortywinksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D5A202A6A53C800366CFE /* fortywinksApp.swift */; };
-		409D5A232A6A53C800366CFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D5A222A6A53C800366CFE /* ContentView.swift */; };
+		409D5A232A6A53C800366CFE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D5A222A6A53C800366CFE /* MainView.swift */; };
 		409D5A252A6A53CA00366CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409D5A242A6A53CA00366CFE /* Assets.xcassets */; };
 		409D5A282A6A53CA00366CFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409D5A272A6A53CA00366CFE /* Preview Assets.xcassets */; };
 		409D5A322A6A549000366CFE /* Tranquility.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 409D5A312A6A549000366CFE /* Tranquility.mp3 */; };
 		409D5A342A6A54D800366CFE /* PlayMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D5A332A6A54D800366CFE /* PlayMusic.swift */; };
-		409D5A362A6A575D00366CFE /* MusicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D5A352A6A575D00366CFE /* MusicList.swift */; };
+		409D5A362A6A575D00366CFE /* MusicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D5A352A6A575D00366CFE /* MusicListView.swift */; };
 		409D5A3F2A6B8EE500366CFE /* Musics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D5A3E2A6B8EE500366CFE /* Musics.swift */; };
 		409D5A412A6B8F6200366CFE /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D5A402A6B8F6200366CFE /* MusicData.swift */; };
 		409D5A432A6C543D00366CFE /* Deep Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 409D5A422A6C543D00366CFE /* Deep Meditation.mp3 */; };
@@ -26,12 +26,12 @@
 /* Begin PBXFileReference section */
 		409D5A1D2A6A53C800366CFE /* fortywinks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fortywinks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409D5A202A6A53C800366CFE /* fortywinksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fortywinksApp.swift; sourceTree = "<group>"; };
-		409D5A222A6A53C800366CFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		409D5A222A6A53C800366CFE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		409D5A242A6A53CA00366CFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		409D5A272A6A53CA00366CFE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		409D5A312A6A549000366CFE /* Tranquility.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tranquility.mp3; sourceTree = "<group>"; };
 		409D5A332A6A54D800366CFE /* PlayMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusic.swift; sourceTree = "<group>"; };
-		409D5A352A6A575D00366CFE /* MusicList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicList.swift; sourceTree = "<group>"; };
+		409D5A352A6A575D00366CFE /* MusicListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListView.swift; sourceTree = "<group>"; };
 		409D5A3B2A6ACDBB00366CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		409D5A3E2A6B8EE500366CFE /* Musics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musics.swift; sourceTree = "<group>"; };
 		409D5A402A6B8F6200366CFE /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
@@ -72,11 +72,11 @@
 		409D5A1F2A6A53C800366CFE /* fortywinks */ = {
 			isa = PBXGroup;
 			children = (
-				409D5A4A2A6C624700366CFE /* AudioPlayer */,
 				409D5A3B2A6ACDBB00366CFE /* Info.plist */,
+				409D5A4A2A6C624700366CFE /* AudioPlayer */,
 				409D5A2E2A6A53E700366CFE /* Music */,
 				409D5A202A6A53C800366CFE /* fortywinksApp.swift */,
-				409D5A222A6A53C800366CFE /* ContentView.swift */,
+				409D5A222A6A53C800366CFE /* MainView.swift */,
 				409D5A242A6A53CA00366CFE /* Assets.xcassets */,
 				409D5A262A6A53CA00366CFE /* Preview Content */,
 			);
@@ -94,12 +94,8 @@
 		409D5A2E2A6A53E700366CFE /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				409D5A352A6A575D00366CFE /* MusicList.swift */,
-				409D5A312A6A549000366CFE /* Tranquility.mp3 */,
-				409D5A422A6C543D00366CFE /* Deep Meditation.mp3 */,
-				409D5A442A6C54D700366CFE /* In The Light.mp3 */,
-				409D5A462A6C55BE00366CFE /* Light Rain.mp3 */,
-				409D5A472A6C55BE00366CFE /* Rain and thunder.mp3 */,
+				409D5A4D2A6D990800366CFE /* Audio Files */,
+				409D5A352A6A575D00366CFE /* MusicListView.swift */,
 				409D5A332A6A54D800366CFE /* PlayMusic.swift */,
 				409D5A3E2A6B8EE500366CFE /* Musics.swift */,
 				409D5A402A6B8F6200366CFE /* MusicData.swift */,
@@ -113,6 +109,18 @@
 				409D5A4B2A6C625F00366CFE /* AudioPlayer.swift */,
 			);
 			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		409D5A4D2A6D990800366CFE /* Audio Files */ = {
+			isa = PBXGroup;
+			children = (
+				409D5A312A6A549000366CFE /* Tranquility.mp3 */,
+				409D5A422A6C543D00366CFE /* Deep Meditation.mp3 */,
+				409D5A442A6C54D700366CFE /* In The Light.mp3 */,
+				409D5A462A6C55BE00366CFE /* Light Rain.mp3 */,
+				409D5A472A6C55BE00366CFE /* Rain and thunder.mp3 */,
+			);
+			path = "Audio Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,8 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				409D5A232A6A53C800366CFE /* ContentView.swift in Sources */,
-				409D5A362A6A575D00366CFE /* MusicList.swift in Sources */,
+				409D5A232A6A53C800366CFE /* MainView.swift in Sources */,
+				409D5A362A6A575D00366CFE /* MusicListView.swift in Sources */,
 				409D5A3F2A6B8EE500366CFE /* Musics.swift in Sources */,
 				409D5A212A6A53C800366CFE /* fortywinksApp.swift in Sources */,
 				409D5A412A6B8F6200366CFE /* MusicData.swift in Sources */,

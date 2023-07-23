@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     @State var screenSize: CGSize = .zero
 
     var body: some View {
@@ -34,7 +34,7 @@ struct ContentView: View {
                     .offset(y: 0)
                     .frame(minWidth: 0, maxHeight: 100)
                     VStack {
-                        MusicList()
+                        MusicListView()
                             .offset(y: 0)
                             .frame(height: 780, alignment: .center)
                             .listRowSeparator(.hidden)
@@ -49,8 +49,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }
