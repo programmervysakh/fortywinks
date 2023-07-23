@@ -8,32 +8,29 @@
 import SwiftUI
 
 struct MusicList: View {
-    @State public var sounds = [
-        "Tranquility",
-        "Deep Meditation",
-        "In The Light",
-        "Light Rain",
-        "Rain and thunder",
+    @State public var sounds = [Musics(name: "Tranquility"), Musics(name: "Deep Meditation"), Musics(name: "In The Light"), Musics(name: "Light Rain"), Musics(name: "Rain and thunder"),
     ]
-    @State private var buttonTag: Int = 0
-    @State private var imageString: String = "Play"
+    @State var selectedIDs: UUID?
+
+    @State private var isPlaying: Bool = false
     @State public var soundName = ""
+    @State private var selection: String?
 
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                List($sounds, id: \.self) { sounds in
-
+                List($sounds) { $sounds in
                     HStack {
-                        Text(verbatim: sounds.wrappedValue)
+                        Text(verbatim: sounds.name)
                             .fontWeight(.bold)
                         Spacer()
                         Button(action: {
-                            soundName = sounds.wrappedValue
+                            soundName = sounds.name
+                            selectedIDs = sounds.id
                             playPressed()
 
                         }) {
-                            Image(imageString)
+                            Image(selectedIDs == sounds.id && isPlaying ? "Stop" : "Play")
                                 .resizable()
                                 .frame(width: 20, height: 20, alignment: .trailing)
                         }
@@ -45,15 +42,13 @@ struct MusicList: View {
     }
 
     func playPressed() {
-        if buttonTag == 0 {
+        if isPlaying == false {
             playSound(soundName: soundName)
             startSound()
-            buttonTag = 1
-            imageString = "Stop"
+            isPlaying = true
         } else {
             stopSound()
-            buttonTag = 0
-            imageString = "Play"
+            isPlaying = false
         }
     }
 }

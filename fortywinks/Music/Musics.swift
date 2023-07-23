@@ -7,11 +7,7 @@
 
 import Foundation
 
-struct Musics {    
-    let musicItems: [String] = [
-        "Tranquility",
-        "Deep Meditation",
-        "Test 1",
-        "Test 2",
-    ]
+struct Musics : Identifiable {
+    var name: String
+    let id = UUID()
 }
