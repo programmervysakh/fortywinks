@@ -15,7 +15,6 @@
 		409D5A342A6A54D800366CFE /* PlayMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D5A332A6A54D800366CFE /* PlayMusic.swift */; };
 		409D5A362A6A575D00366CFE /* MusicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D5A352A6A575D00366CFE /* MusicListView.swift */; };
 		409D5A3F2A6B8EE500366CFE /* Musics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D5A3E2A6B8EE500366CFE /* Musics.swift */; };
-		409D5A412A6B8F6200366CFE /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D5A402A6B8F6200366CFE /* MusicData.swift */; };
 		409D5A432A6C543D00366CFE /* Deep Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 409D5A422A6C543D00366CFE /* Deep Meditation.mp3 */; };
 		409D5A452A6C54D700366CFE /* In The Light.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 409D5A442A6C54D700366CFE /* In The Light.mp3 */; };
 		409D5A482A6C55BE00366CFE /* Light Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 409D5A462A6C55BE00366CFE /* Light Rain.mp3 */; };
@@ -34,7 +33,6 @@
 		409D5A352A6A575D00366CFE /* MusicListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListView.swift; sourceTree = "<group>"; };
 		409D5A3B2A6ACDBB00366CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		409D5A3E2A6B8EE500366CFE /* Musics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musics.swift; sourceTree = "<group>"; };
-		409D5A402A6B8F6200366CFE /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
 		409D5A422A6C543D00366CFE /* Deep Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Deep Meditation.mp3"; sourceTree = "<group>"; };
 		409D5A442A6C54D700366CFE /* In The Light.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "In The Light.mp3"; sourceTree = "<group>"; };
 		409D5A462A6C55BE00366CFE /* Light Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Light Rain.mp3"; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				409D5A352A6A575D00366CFE /* MusicListView.swift */,
 				409D5A332A6A54D800366CFE /* PlayMusic.swift */,
 				409D5A3E2A6B8EE500366CFE /* Musics.swift */,
-				409D5A402A6B8F6200366CFE /* MusicData.swift */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -202,7 +199,6 @@
 				409D5A362A6A575D00366CFE /* MusicListView.swift in Sources */,
 				409D5A3F2A6B8EE500366CFE /* Musics.swift in Sources */,
 				409D5A212A6A53C800366CFE /* fortywinksApp.swift in Sources */,
-				409D5A412A6B8F6200366CFE /* MusicData.swift in Sources */,
 				409D5A342A6A54D800366CFE /* PlayMusic.swift in Sources */,
 				409D5A4C2A6C625F00366CFE /* AudioPlayer.swift in Sources */,
 			);

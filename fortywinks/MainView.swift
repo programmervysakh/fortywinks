@@ -15,7 +15,7 @@ struct MainView: View {
             Color(.white)
                 .opacity(1)
                 .edgesIgnoringSafeArea(.all)
-            GeometryReader { _ in
+            GeometryReader { geometryReader in
                 VStack(spacing: 0) {
                     HStack {
                         Text("Forty Winks")
@@ -29,14 +29,14 @@ struct MainView: View {
                         Image("Forty")
                             .resizable()
                             .frame(width: 40, height: 40)
-                            .padding(10)
+                            .padding(20)
                     }
                     .offset(y: 0)
                     .frame(minWidth: 0, maxHeight: 100)
                     VStack {
                         MusicListView()
                             .offset(y: 0)
-                            .frame(height: 780, alignment: .center)
+                            .frame(height: geometryReader.size.height-100, alignment: .center)
                             .listRowSeparator(.hidden)
                     }
                     .padding(.bottom, 0)
