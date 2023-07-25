@@ -14,8 +14,7 @@ func playSound(soundName: String) {
     guard musicUrl != nil else {
         return
     }
-
-    audioPlayer.initializeAudio(musicUrl: musicUrl!)
+    audioPlayer.initializeAudio(musicUrl: musicUrl!, soundName: soundName)
 }
 
 func startSound() {

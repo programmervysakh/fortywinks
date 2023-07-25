@@ -7,27 +7,47 @@
 
 import AVFoundation
 import Foundation
+import MediaPlayer
+import UIKit
 
 struct AudioPlayer {
     var musicPlayer: AVAudioPlayer!
+    var audioEngine: AVAudioEngine!
+
     let audioSession = AVAudioSession.sharedInstance()
 
-    mutating func initializeAudio(musicUrl: URL) {
+    var nowPlayingInfoCenter = MPNowPlayingInfoCenter.default()
+    var remoCommandCenter = MPRemoteCommandCenter.shared()
+
+    mutating func initializeAudio(musicUrl: URL, soundName: String) {
         do {
             musicPlayer = try AVAudioPlayer(contentsOf: musicUrl)
             musicPlayer.prepareToPlay()
-            playBack()
+            playBack(soundName: soundName)
         } catch {
             print(error)
         }
     }
 
-    func playBack() {
-        let audioSession = AVAudioSession.sharedInstance()
+    func playBack(soundName: String) {
         do {
             try audioSession.setCategory(AVAudioSession.Category.playback)
+            try! self.audioSession.setActive(true)
+            UIApplication.shared.beginReceivingRemoteControlEvents()
+            updateNowPlayingInfo(trackName: "Forty Winks", artistName: soundName)
         } catch {
             print(error)
         }
+    }
+
+    func updateNowPlayingInfo(trackName: String, artistName: String) {
+        nowPlayingInfoCenter.nowPlayingInfo = [MPMediaItemPropertyTitle: trackName, MPMediaItemPropertyArtist: artistName]
+
+        remoCommandCenter.pauseCommand.isEnabled = true
+        remoCommandCenter.seekForwardCommand.isEnabled = false
+        remoCommandCenter.seekBackwardCommand.isEnabled = false
+        remoCommandCenter.previousTrackCommand.isEnabled = false
+        remoCommandCenter.nextTrackCommand.isEnabled = false
+        remoCommandCenter.togglePlayPauseCommand.isEnabled = true
     }
 }
