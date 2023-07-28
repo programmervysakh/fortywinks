@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MusicListView: View {
-    @State public var sounds = [Musics(name: "Tranquility"), Musics(name: "Deep Meditation"), Musics(name: "In The Light"), Musics(name: "Light Rain"), Musics(name: "Rain and thunder"),
+    @State public var sounds = [Musics(name: "Tranquility"), Musics(name: "Deep Meditation"), Musics(name: "In The Light"), Musics(name: "Light Rain"), Musics(name: "Rain and thunder"), Musics(name: "Waves"),
     ]
     @State var selectedIDs: UUID?
 

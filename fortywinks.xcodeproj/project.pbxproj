@@ -20,6 +20,7 @@
 		409D5A482A6C55BE00366CFE /* Light Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 409D5A462A6C55BE00366CFE /* Light Rain.mp3 */; };
 		409D5A492A6C55BE00366CFE /* Rain and thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 409D5A472A6C55BE00366CFE /* Rain and thunder.mp3 */; };
 		409D5A4C2A6C625F00366CFE /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D5A4B2A6C625F00366CFE /* AudioPlayer.swift */; };
+		409D5A4F2A6F7FEE00366CFE /* Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 409D5A4E2A6F7FEE00366CFE /* Waves.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		409D5A462A6C55BE00366CFE /* Light Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Light Rain.mp3"; sourceTree = "<group>"; };
 		409D5A472A6C55BE00366CFE /* Rain and thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rain and thunder.mp3"; sourceTree = "<group>"; };
 		409D5A4B2A6C625F00366CFE /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		409D5A4E2A6F7FEE00366CFE /* Waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Waves.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		409D5A4D2A6D990800366CFE /* Audio Files */ = {
 			isa = PBXGroup;
 			children = (
+				409D5A4E2A6F7FEE00366CFE /* Waves.mp3 */,
 				409D5A312A6A549000366CFE /* Tranquility.mp3 */,
 				409D5A422A6C543D00366CFE /* Deep Meditation.mp3 */,
 				409D5A442A6C54D700366CFE /* In The Light.mp3 */,
@@ -183,6 +186,7 @@
 				409D5A432A6C543D00366CFE /* Deep Meditation.mp3 in Resources */,
 				409D5A282A6A53CA00366CFE /* Preview Assets.xcassets in Resources */,
 				409D5A482A6C55BE00366CFE /* Light Rain.mp3 in Resources */,
+				409D5A4F2A6F7FEE00366CFE /* Waves.mp3 in Resources */,
 				409D5A252A6A53CA00366CFE /* Assets.xcassets in Resources */,
 				409D5A492A6C55BE00366CFE /* Rain and thunder.mp3 in Resources */,
 			);
